@@ -1,0 +1,17 @@
+			<div id="nav">
+				<ul id="jsddm" class="nav clearfix">
+					<c:if test="${sessionScope.usuarioLogado.perfil.id eq 1 || sessionScope.usuarioLogado.perfil.id eq 2 || sessionScope.usuarioLogado.perfil.id eq 3}">
+						<li id="participantes">
+							<a href="/admin/participantes/listar.action">Participantes</a>
+						</li>
+					</c:if>
+					<c:if test="${sessionScope.usuarioLogado.perfil.id eq 1 || sessionScope.usuarioLogado.perfil.id eq 2}">
+						<li id="usuarios">
+							<a href="/admin/usuarios/listar.action">Usuarios</a>
+						</li>
+					</c:if>
+					<li id="cupons">
+						<a href="/admin/cupons/listar.action">Cupons</a>
+					</li>
+				</ul>
+			</div>

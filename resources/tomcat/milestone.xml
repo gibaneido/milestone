@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Context docBase="C:\xampp\webapps\milestone" path="/milestone">
+    <Resource 
+        name="jdbc/DefaultDS"
+        auth="Container" 
+        type="javax.sql.DataSource"  
+        driverClassName="com.mysql.jdbc.Driver"  
+        url="jdbc:mysql://localhost/milestone" 
+        username="milestone"
+        password="3@Milestone"
+        initialSize="10"
+        maxActive="100"
+        maxIdle="10"
+    />
+</Context>

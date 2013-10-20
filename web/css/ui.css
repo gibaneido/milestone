@@ -1,0 +1,41 @@
+#feedback { font-size: 1.4em; }
+#selectable .selecting { background: #c20f22; }
+#selectable .selected { background: #ee1a2f; color: white; }
+#selectable { list-style-type: none; margin: 0; padding: 0; }
+#selectable li { margin: 3px; padding: 0.4em; font-size: 1.4em; height: 18px; }
+.split { background-color: #eeeeee; height: auto;}
+.master { float: left; display:inline ; width: 30%; height: 100%;}
+.detail { top: 3px; background-color: #dddddd; float: left; display:inline ; width: 70%; height: 100%;}
+.detail p {text-align:center}
+.grid {top:3px}
+
+input.text { margin-bottom:12px; padding: .4em; }
+		fieldset { padding:0; border:0; }
+		.ui-dialog .ui-state-error { padding: .3em; }
+		.validateTips { border: 1px solid transparent; padding: 0.3em; }
+		
+#horizontal {
+	display:inline;
+	float:left;
+	width:90%;
+	height:90px;
+}
+		
+#vertical {
+	display:inline;
+	float:left;
+	width:10%;
+}
+
+.ToolText{position:relative; text-align: left !important;}
+.ToolTextHover{position:relative;text-align: left !important;}
+.ToolText span{display: none;}
+
+.ToolTextHover span{
+  display:block;
+  position:absolute;
+  left:25px;
+  background-color:gray; color:white;
+  text-align: center;
+  padding: 3px 3px 3px 3px;
+}

@@ -1,0 +1,2 @@
+<%@ page import="java.io.ByteArrayOutputStream" %><%@ page import="java.io.PrintStream" %><%@ page isErrorPage="true" %>{ "status":"fail", "message":"<%=exception %>" }
+<% //response.sendRedirect("http://bravo.fiat.com.br/realmap"); %>

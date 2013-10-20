@@ -1,0 +1,277 @@
+strong {font-weight: bolder;}
+a {color: #808080; text-decoration: none;}
+a:hover {text-decoration: underline;}
+a.active_area {font-weight: bolder;}
+
+.separador {font-size: 11px;}
+.al {text-align: left;}
+.ar {text-align: right;}
+.ac {text-align: center;}
+.obs {color: #666666;}
+.text {padding: 2px;}
+.small {width: 40px;}
+.large {font-size: 20px;}
+.medium {width: 200px;}
+.big {width: 400px;}
+.desc{width: 404px; height: 100px;}
+.buttonExit{background-color: red; color: #FFFFFF; padding: 2px 5px;}
+.btnSalvar {background-color: #c8efba !important; border: 1px solid #4eb028 !important;}
+.button {
+	border: none;
+	background: #FFF;
+	padding: 4px 12px;
+	text-decoration: none;
+	border: 1px solid #000;
+	width: auto;
+	color: #000000;
+	cursor: pointer;
+}
+
+p.box_errors {
+	color: red;
+	padding:10px;
+	background-color: #fff0f0;
+	border: 1px solid red;
+	margin-bottom: 5px;
+	display: none;
+}
+label.error {display: none !important;}
+input.error, select.error, textarea.error {border: 1px solid red;}
+
+body {
+	background-color: #f7f7f7;
+	font-family: Tahoma;
+	font-size: 13px;
+}
+
+body.login {
+	
+}
+
+#container {
+	margin: 0 auto;
+	padding: 20px;
+}
+
+#container #header {
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+	margin: 0 0 5px 0;
+	background-color: #EEEEEE;
+}
+
+#container #header h1 {
+	width: 200px;
+	height: 62px;
+	background: transparent url(../img/logo/ea.png) no-repeat;
+}
+
+#container .frame {
+	padding: 5px;
+	margin: 0 0 5px 0;
+	border: 1px solid #e0e0e0;
+	background-color: #eeeeee;
+}
+
+#jsddm
+{	margin: 0;
+	padding: 0}
+	
+	#jsddm li
+	{	float: left;
+		list-style: none;
+		font: 12px Tahoma, Arial;
+		margin-right: 5px;}
+	#jsddm li a
+	{	display: block;
+		background: #EEEEEE;
+		padding: 7px 12px;
+		text-decoration: none;
+		border: 1px solid #E0E0E0;
+		width: auto;
+		color: #666666;
+		white-space: nowrap}
+
+	#jsddm li a:hover,
+	#jsddm li a.hover
+	{	background: #DDDDDD}
+		
+		#jsddm li ul
+		{	margin: 5px 0 0 0;
+			padding: 0;
+			position: absolute;
+			visibility: hidden}
+		
+		#jsddm li ul li
+		{	float: none;
+			display: inline;
+			margin-right: 0}
+		
+		#jsddm li ul li a
+		{	width: auto;
+			border: none;
+			border: 1px solid #E0E0E0;
+			border-top: none;
+			background: #EEEEEE}
+		
+		#jsddm li ul li a:hover
+		{	background: #DDDDDD}
+		
+#container h2 {
+	margin: 10px 0 0 0;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+#container .grid {
+	margin: 0px 0 20px 0;
+	width: 100%;
+}
+
+#container .grid tr th,
+#container .grid tr td {
+	padding: 10px;
+}
+
+#container .grid tr td.cinza{
+	padding: 10px;
+	color: #808080;
+}
+
+#container .grid tr th {
+	background-color: #DFDFDF;
+	text-transform: uppercase;
+	font-weight: bolder;
+}
+
+#container .grid tr th.cinza {
+	color: #808080;
+}
+
+#container ul.menu-category {
+	margin: 20px 0 0 0;
+	width: 100%;
+}
+
+#container ul.menu-category li {
+	float: right;
+}
+
+#container ul.menu-category li a {
+	padding: 5px 20px;
+	margin: 0 0 0 3px;
+	background-color: #EEEEEE;
+	border: 1px solid #E0E0E0;
+	color: #333;
+	text-decoration: none;
+}
+
+#container ul.menu-category li a:hover,
+#container ul.menu-category li a.active {
+	background-color: #DDDDDD;
+}
+
+#container div.pagination {
+	margin: -15px 0 40px 0;
+	width: 100%;
+	text-align: left;
+}
+
+#container div.pagination ul li {
+	margin: 0 2px 0 0;
+	display: inline-block;
+}
+
+#container div.pagination ul li a {
+	display: inline-block;
+	padding: 3px;
+	border: 1px solid #ddd;
+}
+
+#container div.pagination ul li a:hover,
+#container div.pagination ul li a.active {
+	background-color: #DDDDDD;
+}
+
+fieldset#formLogin {
+	width: 300px;
+	height: 100px;
+	padding: 80px 10px 10px 10px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -100px 0 0 -160px;
+	background: transparent url(../img/logo/ea.png) no-repeat center top;
+}
+
+fieldset#formLogin p {
+	padding: 5px;
+}
+
+fieldset#formLogin p label {
+	display: inline-block;
+	width: 60px;
+	color: #333;
+}
+
+select.select {
+	width: 200px;
+}
+
+fieldset#formLogin p input.text {
+	width: 216px;
+}
+
+div.boxForm {
+	margin: 0px 0 10px 0;
+}
+
+div.boxAba {
+	padding: 10px;
+	background-color: #DDDDDD;
+}
+
+div.boxAba p {
+	margin: 10px 0;
+}
+
+div.boxAba p label {
+	width: 100px;
+	display: inline-block;
+	text-align: left;
+	padding-right: 5px;
+}
+
+div.box_aparelhos {
+	margin-left: 146px;
+}
+
+ul.aparelhos {
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 20px;
+	padding: 7px;
+	background-color: #EEEEEE;
+}
+
+ul.aparelhos li {
+	margin-bottom: 3px;
+}
+
+ul.aparelhos li label {
+	display: inline-block;
+	width: 130px;
+	padding-right: 5px;
+	font-weight: bolder;
+}
+
+.filter {
+	border: 1px solid #ccc;
+	padding: 10px 5px 0 5px;
+	background-color: #EEEEEE;
+}
+
+.filter ul li {
+	float: left;
+	padding: 0 10px;
+}

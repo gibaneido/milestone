@@ -1,0 +1,85 @@
+<project name="EA" default="all">
+
+	<property file="build.properties" />
+
+	<property name="src.java" location="src/java" />
+	<property name="web.dir" location="web" />
+	<property name="bin.dir" location="${web.dir}/WEB-INF/classes" />
+	<property name="lib.compile.dir" value="lib" />
+	<property name="lib.runtime.dir" value="${web.dir}/WEB-INF/lib" />
+	<property name="resources.dir" location="resources" />
+	<property name="dist.dir" location="dist" />
+	<property name="profile.dir" location="resources/profile" />
+
+	<property name="compile.debug" value="true" />
+	<property name="compile.deprecation" value="false" />
+	<property name="compile.optimize" value="false" />
+	<property name="compile.source" value="1.6" />
+
+	
+	<tstamp>
+		<format property="touch.time" pattern="yyyyMMdd-HHmmss"/>
+	</tstamp>	
+	
+	<path id="compile.classpath">
+		<fileset dir="${lib.compile.dir}">
+		</fileset>
+		<fileset dir="${lib.runtime.dir}">
+		</fileset>
+	</path>
+	
+	
+    <target name="resources">
+		<copy todir="${bin.dir}">
+			<fileset dir="${src.java}" excludes="**/*.java">
+			</fileset>
+		</copy>
+    </target>
+
+    <target name="clean">
+		<delete dir="${bin.dir}" />
+		<mkdir dir="${bin.dir}" />
+    </target>
+
+	<target name="compile" depends="clean,resources">
+		<javac
+				srcdir="${src.java}"
+				fork="${compile.fork}"
+				executable="${compile.executable}"
+				destdir="${bin.dir}"
+				classpathref="compile.classpath"
+				debug="${compile.debug}"
+				deprecation="${compile.deprecation}"
+				optimize="${compile.optimize}"
+				source="${compile.source}" encoding="ISO8859-1">
+		</javac>
+	</target>
+	
+    <target name="copy-env" if="profile">
+
+    	<echo message="" />
+    	<echo message="" />
+    	<echo message="============================================================" />
+    	<echo message="" />
+    	<echo message="Copiando PROFILE: ${profile}" />
+    	<echo message="" />
+    	<echo message="============================================================" />
+    	<echo message="" />
+    	<echo message="" />
+    	
+		<copy overwrite="true" todir="${bin.dir}">
+			<fileset dir="${profile.dir}/${profile}" />
+		</copy>	    	
+    	
+    </target>
+	
+	<target name="dist" depends="compile, copy-env">
+		<war destfile="${dist.dir}/${ant.project.name}.war" webxml="${web.dir}/WEB-INF/web.xml">
+			<fileset dir="${web.dir}" excludesfile="${web.dir}/WEB-INF/web.xml">
+			</fileset>
+		</war>
+	</target>
+
+    <target name="all" depends="dist" />
+
+</project>
